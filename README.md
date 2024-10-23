@@ -7,6 +7,9 @@ The first half of each data is set to be the _training set_, and the second half
 # Findings
 ## _sunspot.dat_
 As expected, the mean squared error (MSE) (or sum of squared error) for test set is larger than training set. Additionally, when the model order _p_ is increasing, the MSE is likely to decrease, but the improvement as _p_ increases becomes minor. 
+![com1sunspots_mse_compare](https://github.com/user-attachments/assets/75e1be0a-2ebc-4652-9b25-95c3fc56bc14)
 
 ## _speech.dat_
 I found that speech.dat has somewhat periodic data, which yielded taking first half training data and the other ans testing data yields minor difference. Thereby, when the linear prediction is applied in the similar manner, the MSE for training set and test set is very similar for _p_=1,...,50. Additionally, as _p_ increases, the MSE is likely to converge at some point.
+
+![com1speech_mse_compare](https://github.com/user-attachments/assets/155f7916-aa4c-45c4-aaba-ee4076a46671)
